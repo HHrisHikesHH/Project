@@ -11,7 +11,7 @@ function blur() {
   if (load > 100) return;
   loadText.innerText = `${load}%`;
 
-  loadText.style.opacity = scale(load, 0, 80, 1, 0);
+  loadText.style.opacity = scale(load, 0, 100, 1, 0);
 
   bg.style.filter = `blur(${scale(load, 0, 80, 20, 0)}px)`;
 
