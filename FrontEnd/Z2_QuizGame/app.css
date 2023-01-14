@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+  background: linear-gradient(
+    132deg,
+    rgb(59, 55, 106) 0%,
+    rgb(0, 143, 186) 50%,
+    rgb(255, 149, 213) 100%
+  );
+  color: rgb(255, 149, 213);
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: rgb(255, 149, 213);
+  margin-bottom: 5rem;
+}
+
+h1 > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+/*****Utility*****/
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > * {
+  /* any child of container */
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/*****buttons*****/
+
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  border: 0 1rem solid rgba(64, 141, 183, 100%);
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: rgba(64, 141, 183, 100%);
+  background-color: rgba(255, 255, 255, 0.874);
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px 5px rgb(255, 149, 213);
+  transform: translateY(-0.2rem);
+  transition: box-shadow 0.15s ease-out, transform 0.15s ease-out;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.874);
+}
